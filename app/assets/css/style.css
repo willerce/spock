@@ -1,0 +1,478 @@
+html {
+    font-size: 62.5%;
+    font-family: Tahoma;
+}
+
+/* Font sizing with rem http://snook.ca/archives/html_and_css/font-size-with-rem */
+/*body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input,button, textarea, p, blockquote, th, td, hr {margin: 0;padding: 0;}*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.333;
+    font-size: 12px;
+}
+
+/*1.333 http://www.99css.com/archives/830 | -webkit-text-size-adjust:none; 无法缩放 这玩意儿乱用pony哥会找你的*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+
+/*统一各浏览器默认大小*/
+input, textarea, select, button {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: inherit;
+}
+
+input[type="button"], input[type="submit"], select, button {
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+fieldset, img, a img, iframe {
+    border-width: 0;
+    border-style: none;
+}
+
+textarea {
+    resize: vertical;
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/** TmTool **/
+body {
+    width: 340px;
+    height: 400px;
+    min-width: 300px;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+
+}
+
+.animation {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1)
+}
+
+::-webkit-scrollbar {
+    height: 16px;
+    overflow: visible;
+    width: 16px
+}
+
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0
+}
+
+::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 7px
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-width: 7px 0 0
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.08)
+}
+
+::-webkit-scrollbar-track:active {
+    background-color: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 1px -1px 0 rgba(0, 0, 0, 0.1), inset -1px 1px 0 rgba(0, 0, 0, 0.05)
+}
+
+::-webkit-scrollbar-track:horizontal:hover {
+    box-shadow: inset -1px 1px 0 rgba(0, 0, 0, 0.1), inset 1px -1px 0 rgba(0, 0, 0, 0.05)
+}
+
+::-webkit-scrollbar-track:vertical:hover {
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset -1px -1px 0 rgba(0, 0, 0, 0.05)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 7px;
+    min-height: 20px;
+    padding: 100px 0 0;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.08), inset -1px -1px 0 rgba(0, 0, 0, 0.05)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    border-width: 7px 0 0;
+    padding: 0 0 0 100px;
+    box-shadow: inset -1px 1px 0 rgba(0, 0, 0, 0.1), inset 1px -1px 0 rgba(0, 0, 0, 0.07)
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2)
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/* icon */
+.icon {
+    display: inline-block;
+}
+
+.icon-close {
+    height: 20px;
+    width: 20px;
+    background: url(../img/icon-close.png) no-repeat center center;
+}
+
+.icon-close:hover {
+    background: url(../img/icon-close_hover.png) no-repeat center center;
+}
+
+.icon-minimizi {
+    height: 20px;
+    width: 20px;
+    background: url(../img/icon-minimizi.png) no-repeat center center;
+}
+
+.icon-minimizi:hover {
+    background: url(../img/icon-minimizi_hover.png) no-repeat center center;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #313437;
+}
+
+.sidebar__shadow {
+    width: 12px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../img/sidebar-shadow.png) repeat-x;
+    z-index: 2;
+}
+
+.sidebar__title {
+    -webkit-app-region: drag;
+    color: #949597;
+    height: 45px;
+    line-height: 45px;
+    text-transform: uppercase;
+    text-indent: 15px;
+    font-weight: bold;
+}
+
+.sidebar__list {
+
+}
+.sidebar__item {
+    height: 42px;
+    padding-left: 30px;
+    color: #7F7F7F;
+    position: relative;
+}
+
+.sidebar__name {
+    line-height: 38px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sidebar__item:hover {
+    background: #302F2F;
+}
+
+.sidebar__item_current,
+.sidebar__item_current:hover {
+    background: #EF4C79;
+    color: #fff;
+}
+
+.sidebar__item:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    background: #7F7F7F;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+}
+
+.sidebar__item_current:before {
+    background: #fff;
+}
+
+.sidebar__item:hover {
+    cursor: pointer;
+}
+
+.sidebar__item:hover .controls {
+    visibility: visible;
+    opacity: 1;
+}
+
+.controls {
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    opacity: 0;
+}
+
+.controls__item {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.controls__item_remove {
+    background: url(../img/icon-remove.png) no-repeat;
+}
+
+.controls__item_remove:hover {
+    background: url(../img/icon-remove_hover.png) no-repeat;
+}
+
+/************
+ *  mod-project
+ **************/
+.task-tab {
+    background: #F5F6F8;
+    width: 280px;
+    margin-left: 200px;
+    height: 359px;
+}
+
+/************
+ *  mod-task
+ **************/
+.task-list {
+    height: 359px;
+    overflow-y: auto;
+}
+
+.task-list__item {
+    margin: 10px;
+    box-shadow: 2px 2px 3px #d3d3d3;
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    position: relative;
+    color: #7F7F7F;
+}
+
+.task-list__item_running,
+.task-list__item_error {
+    background-color: #ddd;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    -webkit-animation: progress-bar-stripes 0.7s linear infinite;
+    background-size: 40px 40px;
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.task-list__item_error {
+    background-color: #d9534f;
+    -webkit-animation: none;
+    color: #fff;
+}
+
+.task-list__item-name {
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.task-list__actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.task-list__action-item {
+    float: left;
+    height: 40px;
+    width: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task-list__action-item_run {
+    background: url(../img/icon-run.png) no-repeat center center;
+}
+
+.task-list__action-item_run:hover {
+    background: url(../img/icon-run_hover.png) no-repeat center center;
+}
+
+.task-list__action-item_stop {
+    background: url(../img/icon-stop.png) no-repeat center center;
+}
+
+.task-list__action-item_stop:hover {
+    background: url(../img/icon-stop_hover.png) no-repeat center center;
+}
+
+.task-list__action-item_terminal {
+    background: url(../img/icon-terminal.png) no-repeat center center;
+}
+
+.task-list__action-item_terminal:hover {
+    background: url(../img/icon-terminal_hover.png) no-repeat center center;
+}
+
+/********
+ * console
+ ***********/
+.console {
+    font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", "Microsoft Yahei", monospace;
+    font-size: 12px;
+    line-height: 1.4em;
+    height: 400px;
+    width: 480px;
+    overflow-y: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #93A1A1;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/********
+ * titlebar
+ ***********/
+
+.titlebar {
+    -webkit-app-region: drag;
+    width: 280px;
+    margin-left: 200px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 1px 1px 2px #d3d3d3;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.titlebar__ctrl {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.titlebar__item {
+    -webkit-app-region: no-drag;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.titlebar__item:hover {
+    background: #E4E4E4;
+    text-decoration: none;
+}
