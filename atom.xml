@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Spock App]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2014-01-24T16:29:29+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[TmT]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Spock 1.0]]></title>
+    <link href="http://yoursite.com/blog/2014/01/21/spock-1-dot-0/"/>
+    <updated>2014-01-21T21:35:57+08:00</updated>
+    <id>http://yoursite.com/blog/2014/01/21/spock-1-dot-0</id>
+    <content type="html"><![CDATA[<p>Spock 是由腾讯 <a href="http://tmt.io/">TmT</a> 团队开发的 Grunt 可视化工具。</p>
+
+<p>Spock 适用于以 Grunt 搭建开发流程的项目提供可视化操作，与 <a href="http://koala-app.com/index-zh.html">Koala</a>，<a href="http://alphapixels.com/prepros/">Prepros</a> 等工具不同是，Spock 是基于 Grunt 命令之上 GUI 工具，本身并不提供任何的功能，只是用 GUI 替代原先敲命令运行 Grunt 任务的方式。</p>
+
+<p>通过可视化的展示，操作，降低 Grunt 的使用门槛，可以迅速在团队中推广自动化规范。</p>
+
+<h3>开始使用 Spock</h3>
+
+<ul>
+<li><a href="">下载安装使用介绍</a> &ndash; <em>简单介绍如果开始使用 Spock</em></li>
+<li><a href="">Grunt 任务配置</a> &ndash; <em>介绍开发中的常见任务配置</em></li>
+</ul>
+
+
+<h3>使用问题或 Bug 提交</h3>
+
+<p>使用中出现问题，请查阅我们的<a href="http://yoursite.com/docs">文档</a>。如果查阅文档无法解决你的问题，请带上详细的问题描述、错误信息，<a href="https://github.com/Mobile-Team/spock/issues">提一条 Issue</a>，请你也可以发邮件给 <a href="mailto:willerce@gmail.com">willerce@gmail.com</a>，</p>
+]]></content>
+  </entry>
+  
+</feed>
