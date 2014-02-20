@@ -18,9 +18,22 @@ var ProjectManager = (function () {
             var project_name = path.basename(dir);
             var project_id = spock.util.uid(project_name);
 
+            var GruntPath = dir + '/node_modules/grunt/';
+
+            if (!fs.existsSync(GruntPath)) {
+                window.alert('Unable to find local grunt.');
+                return
+            }
+
             var grunt = require(dir + "/node_modules/grunt/");
 
             var GruntinitConfigFnPath = grunt.file.findup('Gruntfile.{js,coffee}', {cwd: dir, nocase: true});
+
+            if (GruntinitConfigFnPath === null) {
+                window.alert('Unable to find Gruntfile.');
+                return
+            }
+
             require(GruntinitConfigFnPath)(grunt);
 
             var tasks = [];
