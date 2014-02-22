@@ -5,7 +5,6 @@ var exec = require("child_process").exec;
 var path = require("path");
 var md5 = require("MD5");
 var ansi2html = require('ansi2html');
-var clc = require('cli-color');
 var gui = require('nw.gui');
 var winMain = gui.Window.get();
 

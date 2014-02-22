@@ -1,22 +1,9 @@
 {
   "name": "Spock",
-  "description": "A Grunt Gui Tool",
+  "description": "Spock Builder",
   "version": "0.0.1",
-  "main": "app/app.html",
-  "single-instance": true,
-  "window": {
-    "icon": "resource/icon512x512.png",
-    "show": true,
-    "toolbar": false,
-    "frame": false,
-    "position": "center",
-    "width": 480,
-    "height": 400,
-    "resizable": false
-  },
-  "dependencies": {
-    "MD5": "1.2.0",
-    "ansi2html": "0.0.1",
-    "cli-color": "~0.2.3"
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-node-webkit-builder": "~0.1.17"
   }
 }
