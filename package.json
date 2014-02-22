@@ -1,0 +1,9 @@
+{
+  "name": "Spock",
+  "description": "Spock Builder",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-node-webkit-builder": "~0.1.17"
+  }
+}
