@@ -7,8 +7,8 @@
   "window": {
     "icon": "resource/icon512x512.png",
     "show": true,
-    "toolbar": false,
-    "frame": false,
+    "toolbar": true,
+    "frame": true,
     "position": "center",
     "width": 480,
     "height": 400,
@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "MD5": "1.2.0",
-    "ansi2html": "0.0.1",
-    "cli-color": "~0.2.3"
+    "ansi2html": "0.0.1"
   }
 }
