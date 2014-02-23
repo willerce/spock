@@ -60,12 +60,12 @@ var ProjectManager = (function () {
 
     ProjectManager.prototype.remove = function (id) {
 
-        var projects = _.reject(self.projects, function (project) {
+        this.projects = _.reject(this.projects, function (project) {
             return project.id === id;
         });
 
         //更新 projects
-        spock.storageService.setProjects(projects);
+        spock.storageService.setProjects(this.projects);
 
         //杀死项目的进程
         spock.terminalManager.killProjectWorkers(id);
