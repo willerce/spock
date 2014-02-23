@@ -22,22 +22,6 @@ $(document).ready(function () {
 
     var $body = $('body');
 
-    //标题栏
-    $('.JS-TitleBar').click(function (event) {
-
-        var aciton = $(this).attr('data-action');
-        switch (aciton) {
-            case 'close':
-                winMain.close();
-                break;
-            case 'minimizi':
-                winMain.minimize();
-                break;
-        }
-
-        return false;
-    });
-
     //项目切换
     $body.on('click', '.JS-Sidebar-Item', function () {
         spock.app.switchProject($(this).attr('data-id'));

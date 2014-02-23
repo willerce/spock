@@ -1,6 +1,6 @@
 html {
     font-size: 62.5%;
-    font-family: Tahoma;
+    font-family: Tahoma,sans-serif;
 }
 
 /* Font sizing with rem http://snook.ca/archives/html_and_css/font-size-with-rem */
@@ -102,12 +102,10 @@ body {
     position: relative;
     overflow: hidden;
     -webkit-user-select: none;
-    -webkit-app-region: drag;
 }
 
 .animation {
     -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -204,26 +202,6 @@ body {
 /* icon */
 .icon {
     display: inline-block;
-}
-
-.icon-close {
-    height: 20px;
-    width: 20px;
-    background: url(../img/icon-close.png) no-repeat center center;
-}
-
-.icon-close:hover {
-    background: url(../img/icon-close_hover.png) no-repeat center center;
-}
-
-.icon-minimizi {
-    height: 20px;
-    width: 20px;
-    background: url(../img/icon-minimizi.png) no-repeat center center;
-}
-
-.icon-minimizi:hover {
-    background: url(../img/icon-minimizi_hover.png) no-repeat center center;
 }
 
 .sidebar {
@@ -334,7 +312,7 @@ body {
     background: #F5F6F8;
     width: 280px;
     margin-left: 200px;
-    height: 360px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -342,7 +320,7 @@ body {
  *  mod-task
  **************/
 .task-list {
-    height: 359px;
+    height: 100%;
     overflow-y: auto;
 }
 
@@ -436,39 +414,4 @@ body {
     top: 0;
     left: 0;
     z-index: 999;
-}
-
-/********
- * titlebar
- ***********/
-
-.titlebar {
-    -webkit-app-region: drag;
-    width: 280px;
-    margin-left: 200px;
-    height: 40px;
-    background: #fff;
-    box-shadow: 1px 1px 2px #d3d3d3;
-    margin-bottom: 2px;
-    position: relative;
-}
-
-.titlebar__ctrl {
-    position: absolute;
-    right: 5px;
-    top: 10px;
-}
-
-.titlebar__item {
-    -webkit-app-region: no-drag;
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    border-radius: 2px;
-}
-
-.titlebar__item:hover {
-    background: #E4E4E4;
-    text-decoration: none;
 }
