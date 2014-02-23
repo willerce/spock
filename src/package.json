@@ -1,7 +1,7 @@
 {
   "name": "Spock",
   "description": "A Grunt Gui Tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "app/app.html",
   "single-instance": true,
   "window": {
