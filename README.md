@@ -13,7 +13,7 @@ We hope Spock can promote the usage of Grunt.
 Website (Chinese): [getspock.com](http://getspock.com/)
 
 
-Download: [github.com/Mobile-Team/spock/releases](https://github.com/Mobile-Team/spock/releases).
+Download: [github.com/willerce/spock/releases](https://github.com/willerce/spock/releases).
 
 
 ##Getting started
