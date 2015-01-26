@@ -3,7 +3,7 @@ spock
 
 A Grunt GUI Tool
 
-![Spock App](http://s.willerce.com/lab/spock/spock.png)
+![Spock App](http://lab.willerce.com/spock/spock.png)
 
 Spock is a GUI frontend for Grunt. Unlike Koala and Prepros, Spock merely provides a graphic interface, without adding any extra functionality.
 
